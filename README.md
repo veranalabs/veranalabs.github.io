@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verana Labs | Premium Genetics - Actualizado</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        .hero-section {
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+        }
+        .section {
+            padding: 4rem 0;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1a472a, #2d5f3e);
+        }
+        .card {
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        .section-title:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 3px;
+            width: 70px;
+            background-color: #2d5f3e;
+        }
+        .center-title:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .footer {
+            background-color: #1a472a;
+        }
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://i.imgur.com/ipMSBJM.jpg" alt="Verana Labs Logo" class="h-16">
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#inicio" class="text-gray-800 hover:text-green-700 font-medium">Inicio</a>
+                <a href="#nosotros" class="text-gray-800 hover:text-green-700 font-medium">Nosotros</a>
+                <a href="#servicios" class="text-gray-800 hover:text-green-700 font-medium">Servicios</a>
+                <a href="#genetica" class="text-gray-800 hover:text-green-700 font-medium">Genética Premium</a>
+                <a href="#infraestructura" class="text-gray-800 hover:text-green-700 font-medium">Infraestructura</a>
+                <a href="#galeria" class="text-gray-800 hover:text-green-700 font-medium">Galería</a>
+                <a href="#contacto" class="text-gray-800 hover:text-green-700 font-medium">Contacto</a>
+            </nav>
+            <div class="md:hidden">
+                <button class="text-gray-800 focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Video/GIF -->
+    <section id="inicio" class="hero-section flex items-center justify-center" style="margin-top: 70px;">
+        <video autoplay loop muted playsinline class="w-full h-full object-cover absolute">
+            <source src="https://i.imgur.com/iPMSBJM.jpg" type="video/mp4">
+            <!-- Fallback to image if video doesn't load -->
+        </video>
+        <div class="bg-black bg-opacity-50 w-full h-full flex items-center relative z-10">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-5xl font-bold text-white mb-6">VERANA LABS</h1>
+                <p class="text-xl text-white mb-8">Genética Premium de Cannabis Medicinal</p>
+                <a href="#contacto" class="bg-green-700 text-white py-3 px-8 rounded-full font-medium hover:bg-green-800 transition duration-300">Contáctanos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="section bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-3xl font-bold">Sobre Nosotros</h2>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <p class="text-lg mb-4">Verana Labs es una empresa colombiana con experiencia desde 2018 en el cultivo y procesamiento de cannabis medicinal, enfocada en la producción de genética premium y extractos de alta calidad.</p>
+                    <p class="text-lg mb-4">Nuestra misión es proporcionar productos de cannabis medicinal de la más alta calidad, cumpliendo con los estándares internacionales y operando bajo prácticas sostenibles.</p>
+                    <div class="mt-6 flex flex-col gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-700 text-xl mr-3"></i>
+                            <p><span class="font-semibold">Innovación constante</span> en técnicas de cultivo y procesamiento</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-700 text-xl mr-3"></i>
+                            <p><span class="font-semibold">Automatización</span> en todos nuestros procesos productivos</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-700 text-xl mr-3"></i>
+                            <p><span class="font-semibold">Estándares internacionales</span> GACP, GMP y certificaciones EU-GMP</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-700 text-xl mr-3"></i>
+                            <p><span class="font-semibold">Sostenibilidad</span> en todas nuestras operaciones</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://i.imgur.com/iPMSBJM.jpg" alt="Cultivo de Cannabis Medicinal" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="section bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-3xl font-bold text-center center-title">Nuestros Servicios</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md card">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-seedling text-green-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Producción de Semillas</h3>
+                    <p>Producimos semillas de cannabis medicinal de alta calidad genética, garantizando pureza y estabilidad en cada variedad.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md card">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-leaf text-green-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Cultivo Automatizado</h3>
+                    <p>Contamos con sistemas de cultivo indoor y outdoor completamente automatizados para un control óptimo de todos los parámetros.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md card">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-wind text-green-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Secado Industrial</h3>
+                    <p>Nuestro sistema de secado industrial automatizado garantiza la preservación óptima de cannabinoides y terpenos.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md card">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-flask text-green-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Extracción CO₂</h3>
+                    <p>Utilizamos tecnología avanzada de CO₂ supercrítico (Cann-Ma-Lab) para la extracción de aceites esenciales de la más alta pureza.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Genetics Section with Seeds Image -->
+    <section id="genetica" class="section gradient-bg text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-2/5">
+                    <img src="https://i.imgur.com/iPMSBJM.jpg" alt="Semillas de Cannabis Premium" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-3/5">
+                    <h2 class="section-title text-3xl font-bold">Genética Premium</h2>
+                    <p class="text-lg mb-4">En Verana Labs contamos con acceso a genéticas exclusivas de cannabis medicinal gracias a nuestras alianzas estratégicas con bancos de semillas de Europa y Estados Unidos.</p>
+                    <p class="text-lg mb-4">Nuestro programa de mejoramiento genético nos permite desarrollar variedades con perfiles cannabinoides específicos, adaptadas a diferentes aplicaciones terapéuticas.</p>
+                    <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-dna text-green-300 text-xl mr-3"></i>
+                            <p>Variedades ricas en CBD</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-dna text-green-300 text-xl mr-3"></i>
+                            <p>Genéticas balanceadas CBD:THC</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-dna text-green-300 text-xl mr-3"></i>
+                            <p>Estabilidad genética garantizada</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-dna text-green-300 text-xl mr-3"></i>
+                            <p>Perfiles terpénicos específicos</p>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <a href="#contacto" class="bg-white text-green-800 py-2 px-6 rounded-full font-medium hover:bg-gray-100 transition duration-300">Consultar disponibilidad</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infrastructure Section with Aerial Views -->
+    <section id="infraestructura" class="section bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-3xl font-bold text-center center-title">Nuestra Infraestructura</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="flex flex-col">
+                    <img src="https://i.imgur.com/iPMSBJM.jpg" alt="Invernadero Automatizado" class="rounded-lg shadow-lg mb-4 h-64 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Invernadero Automatizado</h3>
+                    <p>2,300 m² de invernadero de última tecnología con control automático de clima, iluminación y fertirrigación.</p>
+                </div>
+                <div class="flex flex-col">
+                    <img src="https://i.imgur.com/iPMSBJM.jpg" alt="Zona Outdoor" class="rounded-lg shadow-lg mb-4 h-64 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Zona Outdoor</h3>
+                    <p>10,000 m² de cultivo outdoor para producción a gran escala, siguiendo prácticas agrícolas sostenibles.</p>
+                </div>
+                <div class="flex flex-col">
+                    <img src="https://i.imgur.com/iPMSBJM.jpg" alt="Cuarto de Secado" class="rounded-lg shadow-lg mb-4 h-64 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Cuarto de Secado</h3>
+                    <p>Instalaciones de secado industrial con control preciso de temperatura y humedad para preservar la calidad del producto.</p>
+                </div>
+                <div class="flex flex-col">
+                    <img src="https://i.imgur.com/iPMSBJM.jpg" alt="Laboratorio Cann-Ma-Lab" class="rounded-lg shadow-lg mb-4 h-64 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Laboratorio Cann-Ma-Lab</h3>
+                    <p>Equipado con tecnología de extracción de CO₂ supercrítico para la obtención de extractos de alta pureza y calidad farmacéutica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Gallery Section -->
+    <section id="galeria" class="section bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-3xl font-bold text-center center-title">Galería</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="https://i.imgur.com/iPMSBJM.jpg" alt="Vista aérea de instalaciones" class="w-full">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.imgur.com/iPMSBJM.jpg" alt="Invernadero con estructura sawtooth" class="w-full">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.imgur.com/iPMSBJM.jpg" alt="Semillas de cannabis medicinal" class="w-full">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.imgur.com/iPMSBJM.jpg" alt="Productos finales de cannabis" class="w-full">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.imgur.com/iPMSBJM.jpg" alt="Cultivo indoor de cannabis" class="w-full">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.imgur.com/iPMSBJM.jpg" alt="Cultivo en etapa de floración" class="w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-3xl font-bold text-center center-title">Nuestros Productos</h2>
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="md:w-1/2 flex flex-col items-center">
+                    <img src="https://i.imgur.com/iPMSBJM.jpg" alt="Extractos y cápsulas de cannabis medicinal" class="rounded-lg shadow-xl w-full max-w-md mb-4">
+                    <h3 class="text-xl font-semibold mb-2 text-center">Derivados Medicinales</h3>
+                    <p class="text-center">Nuestros aceites y cápsulas son elaborados bajo los más altos estándares de calidad, asegurando concentraciones precisas de cannabinoides.</p>
+                </div>
+                <div class="md:w-1/2 flex flex-col items-center">
+                    <img src="https://i.imgur.com/iPMSBJM.jpg" alt="Semillas de cannabis premium" class="rounded-lg shadow-xl w-full max-w-md mb-4">
+                    <h3 class="text-xl font-semibold mb-2 text-center">Semillas Premium</h3>
+                    <p class="text-center">Ofrecemos genéticas exclusivas con características controladas y estables, ideales para productores que buscan resultados consistentes.</p>
+                </div>
+            </div>
+            <div class="mt-10 text-center">
+                <a href="#contacto" class="bg-green-700 hover:bg-green-800 text-white py-3 px-8 rounded-full font-medium transition duration-300">Solicitar información</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="section bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-3xl font-bold">Contacto</h2>
+            <div class="flex flex-col md:flex-row gap-10">
+                <div class="md:w-1/2">
+                    <p class="text-lg mb-6">Nuestro equipo de profesionales está listo para atender todas tus consultas y establecer relaciones comerciales B2B.</p>
+                    
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold mb-3">Equipo Directivo</h3>
+                        <div class="flex items-start mb-3">
+                            <i class="fas fa-user text-green-700 mt-1 mr-3"></i>
+                            <div>
+                                <p class="font-medium">Director General</p>
+                                <p>Email: info@veranalabs.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-3">
+                            <i class="fas fa-user text-green-700 mt-1 mr-3"></i>
+                            <div>
+                                <p class="font-medium">Director de Operaciones</p>
+                                <p>Email: operaciones@veranalabs.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3">Equipo Comercial</h3>
+                        <div class="flex items-start mb-3">
+                            <i class="fas fa-user text-green-700 mt-1 mr-3"></i>
+                            <div>
+                                <p class="font-medium">Gerente Comercial</p>
+                                <p>Tel: +57 350 3345663</p>
+                                <p>Email: comercial@veranalabs.com</p>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <a href="https://wa.me/573503345663" target="_blank" class="inline-flex items-center bg-green-600 text-white py-2 px-6 rounded-full font-medium hover:bg-green-700 transition duration-300">
+                                <i class="fab fa-whatsapp mr-2 text-xl"></i>
+                                Contactar por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <form class="bg-white rounded-lg shadow-md p-6">
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Nombre</label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Tu nombre">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Tu email">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="company">Empresa</label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="company" type="text" placeholder="Nombre de tu empresa">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Mensaje</label>
+                            <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" rows="4" placeholder="¿En qué podemos ayudarte?"></textarea>
+                        </div>
+                        <div>
+                            <button class="bg-green-700 hover:bg-green-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full" type="button">
+                                Enviar mensaje
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regulations Section -->
+    <section class="section bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-3xl font-bold text-center center-title">Cumplimiento Normativo</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+                <div class="md:w-1/2">
+                    <p class="text-lg mb-4">En Verana Labs operamos bajo estricto cumplimiento de la normativa colombiana e internacional para la producción y comercialización de cannabis medicinal.</p>
+                    <div class="mt-6 flex flex-col gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-certificate text-green-700 text-xl mr-3"></i>
+                            <p>Licencias de cultivo otorgadas por el Ministerio de Justicia y el ICA</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-certificate text-green-700 text-xl mr-3"></i>
+                            <p>Certificación GACP (Good Agricultural and Collection Practices)</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-certificate text-green-700 text-xl mr-3"></i>
+                            <p>Sistema de trazabilidad de semilla a producto final</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-certificate text-green-700 text-xl mr-3"></i>
+                            <p>Cumplimiento de estándares para exportación internacional</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/3">
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold mb-4 text-center">Tecnología CO₂</h3>
+                        <img src="https://i.imgur.com/iPMSBJM.jpg" alt="Tecnología CO2 Extracción" class="rounded-lg mb-4">
+                        <p class="text-center">Nuestros extractos son obtenidos mediante tecnología de CO₂ supercrítico, garantizando la máxima pureza y conservando el perfil completo de cannabinoides y terpenos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-6 md:mb-0">
+                    <img src="https://i.imgur.com/ipMSBJM.jpg" alt="Verana Labs Logo" class="h-16 mb-4">
+                    <p class="max-w-xs">Pioneros en el cultivo y producción de cannabis medicinal premium en Colombia.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-3">Enlaces rápidos</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#inicio" class="hover:text-green-300">Inicio</a></li>
+                            <li><a href="#nosotros" class="hover:text-green-300">Nosotros</a></li>
+                            <li><a href="#servicios" class="hover:text-green-300">Servicios</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-3">Información</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#genetica" class="hover:text-green-300">Genética Premium</a></li>
+                            <li><a href="#infraestructura" class="hover:text-green-300">Infraestructura</a></li>
+                            <li><a href="#galeria" class="hover:text-green-300">Galería</a></li>
+                            <li><a href="#contacto" class="hover:text-green-300">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-3">Contacto</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-envelope mr-2"></i>
+                                <span>info@veranalabs.com</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-phone mr-2"></i>
+                                <span>+57 350 3345663</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-map-marker-alt mr-2"></i>
+                                <span>Colombia</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-green-800 my-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p>© 2024 Verana Labs. Todos los derechos reservados.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-white hover:text-green-300"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-green-300"><i class="fab fa-linkedin text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-green-300"><i class="fab fa-twitter text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.md\\:hidden button');
+        const mobileMenu = document.querySelector('nav');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('block');
+            mobileMenu.classList.toggle('fixed');
+            mobileMenu.classList.toggle('top-16');
+            mobileMenu.classList.toggle('left-0');
+            mobileMenu.classList.toggle('right-0');
+            mobileMenu.classList.toggle('bg-white');
+            mobileMenu.classList.toggle('shadow-md');
+            mobileMenu.classList.toggle('py-4');
+            mobileMenu.classList.toggle('flex-col');
+            mobileMenu.classList.toggle('items-center');
+        });
+
+        // If video/gif doesn't load, show a fallback image
+        document.querySelector('.hero-section video').addEventListener('error', function() {
+            this.style.display = 'none';
+            document.querySelector('.hero-section').style.backgroundImage = "url('https://i.imgur.com/iPMSBJM.jpg')";
+        });
+    </script>
+</body>
+</html>
